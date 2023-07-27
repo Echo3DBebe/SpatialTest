@@ -40,6 +40,10 @@ public class Database
 
     public void addEntry(Entry entry)
     {
+        if (db.ContainsKey(entry.getId()))
+        {
+            db.Remove(entry.getId());
+        }
         db.Add(entry.getId(), entry);
     }
 

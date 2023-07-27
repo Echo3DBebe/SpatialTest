@@ -1,6 +1,11 @@
 # Changelog
 This file will log all noteworthy changes to the echo3D Unity SDK package.
 
+## [1.1.2] Jun 2023
+- Fixed a bug where replacing an asset on the console caused a runtime exception instead of replacing the asset in Unity
+
+## [1.1.1] - Mar 2023
+- Fixed a bug that caused model initialization to fail in HDRP and URP projects
 
 ## [1.1.0] - Mar 2023
 - Fixed a bug that caused metadata updates to not apply to objects when metadata was cleared

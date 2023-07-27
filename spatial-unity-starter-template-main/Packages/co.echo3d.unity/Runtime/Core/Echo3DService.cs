@@ -133,12 +133,26 @@ public class Echo3DService : MonoBehaviour
         www = null;
     }
 
+    private void ClearExistingHologram(GameObject targetParent)
+    {
+        if (targetParent != null)
+        {
+            if (targetParent.transform.childCount > 0)
+            {
+                foreach (Transform child in targetParent.transform)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+        }
+    }
     public void DownloadAndInstantiate(Entry entry, string serverURL, GameObject targetParent, bool zeroTransforms, bool disableRemoteTransformations)
     {
         if (benchmarkStart == 0)
         {
             benchmarkStart = Time.time;
         }
+        ClearExistingHologram(targetParent);
         // Get hologram type
         Hologram.hologramType hologramType = entry.getHologram().getType();
         // Handle model hologram

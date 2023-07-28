@@ -1,6 +1,9 @@
 # Changelog
 This file will log all noteworthy changes to the echo3D Unity SDK package.
 
+## [1.1.3] Jul 2023
+- Fix bug with shaders in URP projects
+
 ## [1.1.2] Jun 2023
 - Fixed a bug where replacing an asset on the console caused a runtime exception instead of replacing the asset in Unity
 

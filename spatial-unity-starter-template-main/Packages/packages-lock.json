@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "co.echo3d.echounitysdk": {
+    "co.echo3d.unity": {
       "version": "file:co.echo3d.unity",
       "depth": 0,
       "source": "embedded",
